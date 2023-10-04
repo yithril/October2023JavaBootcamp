@@ -20,5 +20,13 @@ public class Main {
         System.out.println("myDouble: " + myDouble);
         System.out.println("myChar: " + myChar);
         System.out.println("myBoolean: " + myBoolean);
+
+        //declaring the variable
+        //declare a string called myName with a value of Jonathan Hop
+        String myName = "Jonathan Hop";
+
+        myName = "Bob Jones";
+
+        //statically typed language
     }
 }
