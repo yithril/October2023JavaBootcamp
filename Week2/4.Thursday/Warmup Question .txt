@@ -1,0 +1,15 @@
+Warmup Question 
+Create a Java class named Student with the following attributes:
+
+    name (String)
+    age (int)
+    grade (double)
+
+Implement the following in the Student class:
+
+    Create a constructor that initializes the name, age, and grade attributes.
+    Implement getter methods for each attribute (getName, getAge, getGrade).
+    Implement setter methods for each attribute (setName, setAge, setGrade).
+    Create a custom method named isPassing that returns true if the grade attribute is greater than or equal to 70 and false otherwise.
+
+In your Main class, create an instance of the Student class, set its attributes, and use the getter and custom method to display information about whether the student is passing.

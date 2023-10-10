@@ -1,0 +1,10 @@
+Warmup Question - Basic StringBuilder:
+Write a Java program that does the following:
+
+    Create a StringBuilder object.
+    Append the following strings to the StringBuilder:
+        "Hello,"
+        " how are you?"
+    Insert "Java " at the beginning of the StringBuilder's content.
+    Replace "Java" with "Good" in the StringBuilder.
+    Print the final content of the StringBuilder.
