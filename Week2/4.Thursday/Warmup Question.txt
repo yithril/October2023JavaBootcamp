@@ -1,0 +1,20 @@
+Write a Java program that does the following:
+
+    Create a Student class with the following properties:
+	First Name, Last Name, StudentID, 
+        Year In College (1-4, 1 is Freshman, 2 is Sophomore, 3 is Junior and 4 is Senior)
+        Whether or not they're an international Student
+	Address (Street # and Street Name)
+
+    Create all getters and setters for the properties
+
+    Create a constructor that takes in ALL properties of the Student.
+
+    Create -another- constructor that ONLY takes in the First Name, Last Name, and StudentID
+
+    Create a method in the Student class called "greeting" where the student introduces themselves.
+    Ex: "Hi my name is Bob Smith!"
+    (Hint, there's more than 1 way to accomplish this)
+
+
+    
