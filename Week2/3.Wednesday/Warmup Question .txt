@@ -1,5 +1,5 @@
-Question: Write a Java program that uses a for loop to print all the even numbers from 1 to 20, 
-and then use a while loop to print all the odd numbers from 1 to 19.
+Question: Write a Java program that uses a for loop to print all the numbers from 20 to 1 (descending), 
+and then use a while loop to print all the numbers from 1 to 19 (ascending).
 
 CHALLENGE QUESTION
 
