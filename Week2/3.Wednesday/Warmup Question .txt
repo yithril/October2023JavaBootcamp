@@ -1,15 +1,9 @@
-Warmup Question 
-Create a Java class named Student with the following attributes:
+Question: Write a Java program that uses a for loop to print all the even numbers from 1 to 20, 
+and then use a while loop to print all the odd numbers from 1 to 19.
 
-    name (String)
-    age (int)
-    grade (double)
+CHALLENGE QUESTION
 
-Implement the following in the Student class:
+You are tasked with writing a Java program to find the first three numbers between 1 and 100 that are divisible by both 7 and 9. 
+Write a program using a loop (for or while) to find and print these numbers. Use either break or continue to control the flow of your loop. 
+Don't forget to include comments to explain your code.
 
-    Create a constructor that initializes the name, age, and grade attributes.
-    Implement getter methods for each attribute (getName, getAge, getGrade).
-    Implement setter methods for each attribute (setName, setAge, setGrade).
-    Create a custom method named isPassing that returns true if the grade attribute is greater than or equal to 70 and false otherwise.
-
-In your Main class, create an instance of the Student class, set its attributes, and use the getter and custom method to display information about whether the student is passing.
