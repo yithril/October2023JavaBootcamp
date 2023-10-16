@@ -1,0 +1,7 @@
+Warmup Question - Handling an Exception:
+Write a Java program that does the following:
+
+    Asks the user to enter a number.
+    Attempt to parse the user's input into an integer using Integer.parseInt().
+    Use a try-catch block to handle the possible NumberFormatException that can occur if the user enters something that cannot be parsed as an integer.
+    If the parsing is successful, print the square of the entered number. If an exception occurs, print an error message.

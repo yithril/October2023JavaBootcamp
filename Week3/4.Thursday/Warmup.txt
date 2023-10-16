@@ -1,0 +1,8 @@
+Warmup Question - Using ArrayList:
+Write a Java program that does the following:
+
+    Create an ArrayList of integers.
+    Use a loop to populate the ArrayList with a series of integers (e.g., 1, 2, 3, 4, 5).
+    Use another loop to print each element in the ArrayList.
+    Calculate and print the sum of all the integers in the ArrayList.
+    Calculate and print the average of the integers in the ArrayList.

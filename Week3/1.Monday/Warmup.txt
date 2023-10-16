@@ -1,0 +1,7 @@
+Warmup Question - Sorting an Array:
+Write a Java program that does the following:
+
+    Create an integer array of size 5 and initialize it with some unsorted values.
+    Sort the array.
+    Print the sorted array.
+
