@@ -1,8 +1,12 @@
-public class CodeBlocksActivity {
+package org.example;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
     public static void main(String[] args) {
         int mainVariable = 10;
-
 
         System.out.println("Main method:");
         System.out.println("mainVariable = " + mainVariable);
@@ -18,11 +22,6 @@ public class CodeBlocksActivity {
             System.out.println("Inside for loop:");
             System.out.println("forLoopVariable = " + forLoopVariable);
         }
-
-        //Why won't lines 22 and 23 compile?
-        System.out.println(ifBlockVariable);
-        System.out.println(forLoopVariable);
-
         anotherMethod();
     }
 
