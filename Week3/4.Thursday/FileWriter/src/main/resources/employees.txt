@@ -1,0 +1,10 @@
+id|name|hours-worked|pay-rate
+10|Dana Wyatt|52.5|12.5
+20|Ezra Aiden|17.0|16.75
+30|Brittanny Thubbs|40.0|16.5
+40|Zephaniah Hughes|2.0|10.0
+50|Caylee Callahan|35.0|15.5
+60|Zane Stevens|45.0|13.5
+70|Maverick Cummings|20.5|16.5
+80|Kamari Todd|14.5|14.5
+90|Hatrick McGee|200.0|8.5
