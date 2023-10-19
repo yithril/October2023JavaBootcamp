@@ -21,6 +21,8 @@ public class Main {
         //int price2 = Integer.parseInt(dataRow[2]);
 
         InventoryItem inventoryItem = new InventoryItem(sku, productName, price, department);
+
+        System.out.println(inventoryItem);
 /*
         String row2 = "AV1051,JBL Bluetooth Speaker,89.95,Audio Video";
 
