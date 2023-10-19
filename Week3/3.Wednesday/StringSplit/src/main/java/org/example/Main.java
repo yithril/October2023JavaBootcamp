@@ -11,6 +11,8 @@ public class Main {
             System.out.println(data);
         }
 
+        System.out.println("Let's do split function with strings!");
+
         String sku = dataRow[0];
         String productName = dataRow[1];
         String department = dataRow[3];
