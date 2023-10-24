@@ -40,7 +40,7 @@ public class ProductManager {
         try{
             FileWriter fileWriter = new FileWriter("src/main/resources/products.csv", true);
 
-            String productLine = String.format("%s|%s|%f|%s", product.getSku(), product.getProductName(), product.getPrice(), product.getDepartment());
+            String productLine = product.toString();
 
             fileWriter.write(productLine);
 

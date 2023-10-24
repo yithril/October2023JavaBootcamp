@@ -44,4 +44,9 @@ public class Product {
     public void setDepartment(String department) {
         this.department = department;
     }
+
+    @Override
+    public String toString(){
+        return String.format("%s|%s|%f|%s", this.getSku(), this.getProductName(), this.getPrice(), this.getDepartment());
+    }
 }
