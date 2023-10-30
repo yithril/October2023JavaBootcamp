@@ -1,0 +1,50 @@
+Project: Phone Manager Console App
+
+Objective: Create a simple console application that allows users to manage a phone book using the PhoneBook class with a HashMap.
+
+Requirements:
+
+    Initialize PhoneBook:
+        Create an instance of the PhoneBook class with a HashMap to store contacts.
+
+    Menu:
+        Display a menu with the following options:
+            Look up a contact
+            Add a new contact
+            Remove a contact
+            Call a contact
+            Quit
+
+    User Input:
+        Use the Scanner class to accept user input for menu choices and contact details.
+
+    Look up a Contact:
+        Allow the user to enter a contact's name.
+        Display the contact's phone number if found.
+        If the contact is not found, display a message indicating that.
+
+    Add a New Contact:
+        Allow the user to enter a new contact's name and phone number.
+        Add the contact to the phone book.
+        Display a confirmation message after adding the contact.
+
+    Remove a Contact:
+        Allow the user to enter the name of the contact to remove.
+        Remove the contact from the phone book.
+        Display a confirmation message after removal.
+
+    Call a Contact:
+        Allow the user to enter the name of the contact to call.
+        Display a message indicating that a call is being made to the contact's phone number.
+        If the contact is not found, display a message indicating that.
+
+    Quit:
+        Implement the "Quit" option to exit the application gracefully.
+        Provide a goodbye message.
+
+    Error Handling:
+        Handle invalid menu choices and input gracefully.
+        Display appropriate error messages for invalid input.
+
+    Documentation:
+        Include comments in your code to explain the functionality of different parts of the program.

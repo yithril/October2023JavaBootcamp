@@ -1,0 +1,18 @@
+10/29 Warmup
+
+Array or ArrayList?
+
+Given the following situations, which do you think would be a more convenient data structure to use to model the situation?
+An array, or an ArrayList? While it could be possible to use both, think of -ease- of use. If you think neither makes sense, why?
+
+Situation 1: Keeping track of exam scores for a small class of 10 students.
+
+Situation 2: Storing a list of books in a library, where books can be added or removed.
+
+Situation 3: Maintaining a list of daily temperatures for a year, with data collected once per day.
+
+Situation 4: Storing a fixed set of weekdays (Monday to Friday) for scheduling purposes.
+
+Situation 5: Tracking the inventory of products in a retail store, where products can be added, updated, or removed.
+
+Situation 6 (Challenge): Managing a phone book with names and phone numbers, where names are used as keys to look up phone numbers efficiently.
