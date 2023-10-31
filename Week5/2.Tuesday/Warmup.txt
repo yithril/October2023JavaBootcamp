@@ -1,0 +1,15 @@
+10/31 Warmup
+
+Create an IntelliJ project for your warm up. We're going to create a way to look
+up a movie's rating based on its name. We're going to use a hash map.
+
+1. Create a hash map. The key will be the movie's name, the value will be the rating. 
+   The rating will be a whole number from 1-10. Create the hash map accordingly.
+
+2. Add 10 movies to your hash map with your own ratings. If you want to add more go ahead.
+
+3. Look up the rating of a movie by its title and display it.
+
+4. Check if a movie is in the hashmap or not. Display the result.
+
+5. Print to the screen the name of all the movies with a rating of above 5.
