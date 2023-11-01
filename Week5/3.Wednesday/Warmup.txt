@@ -22,7 +22,8 @@ Is it raining?
             +-- No --> Go for a walk in the park
 
 You're going to create your own decision tree. This will help you develop your algorithmic thinking
-skills.
+skills. If you don't want to do it as a text file then you can write it out or use whatever software
+you want.
 
 Scenario:
 You and your friends want to plan an exciting weekend adventure, but you need to decide on the best activity based on various factors. 
