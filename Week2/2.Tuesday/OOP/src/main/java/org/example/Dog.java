@@ -22,6 +22,10 @@ public class Dog {
         this.name = name;
     }
 
+    public String getBreed() {
+        return "This breed is " + breed;
+    }
+
     //1. access modifier (public, private) comes first
     //2. What data types does my method return?
     //3. What do you want to name the method? after the name put parenthesis
