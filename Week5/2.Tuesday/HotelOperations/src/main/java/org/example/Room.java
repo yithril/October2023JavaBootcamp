@@ -44,4 +44,18 @@ public class Room {
     }
 
     //custom methods
+    public void checkIn(){
+        if(isAvailable()){
+            this.isDirty = true;
+            this.isOccupied = true;
+            System.out.println("Thank you for checking in!");
+        }
+        else{
+            System.out.println("Cannot check you in sorry");
+        }
+    }
+
+    private void calculateRoomSomething(){
+
+    }
 }

@@ -1,0 +1,16 @@
+Puzzle 1:
+
+The Colorful Hats Puzzle
+
+Four friends - Alice, Bob, Charlie, and Dave - went to a hat shop and bought hats of different colors: Red, Blue, Green, and Yellow. Based on the clues given below, determine who bought which colored hat:
+
+    Alice wore the Red hat if and only if Charlie wore the Green hat.
+    Bob wore the Blue hat if and only if Dave wore the Yellow hat.
+    If Dave didn't wear the Green hat, then Alice wore the Yellow hat.
+    Bob didn't buy the Green hat.
+
+Puzzle 2: The Missing Dollar
+
+In this puzzle, three friends share a hotel room that costs $30, and they each contribute $10. Later, the hotel manager realizes that the room should have only cost $25 
+and gives $5 to the bellboy to return to the friends. However, the bellboy keeps $2 for himself and gives $1 back to each of the three friends. 
+"What happened to the missing dollar?"
