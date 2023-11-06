@@ -1,0 +1,83 @@
+Warm-up 11/6 Separation of concerns
+
+Given a UML Diagram for a Library, create a project and stub out the relevant classes.
+This means that you do not have to actually create the interface, just create the
+skeleton that you'd eventually fill in. Pay careful attention to the UML diagram.
+
+When doing your stubbing, don't forget the order that things go in when
+writing a Java class!
+
+    Class (static) variables
+    Instance variables
+    Constructors
+    Getter and setter methods
+    Other methods
+
+For each class, list out its responsibilities? For example, does it:
+-Represent data of a real world object?
+-Deal with user interaction?
+-Work with files?
+-Filters a collection of objects?
+These are not all options, you can come up with more.
+
+Do any of the classes relate to one another? For example, do any classes
+contain other classes as properties? Why?
+
+After you figure out the responsibilities, list out what coding techniques you 
+might use in each class. For example, would you use a switch case? While loop?
+The FileInputStream or a Scanner? If you do use a scanner, is it for user input?
+
+-------------------------------------------------------------------------------
+UML Diagram - Text Representation
+
+Class: Book
+---------------
+- title: String
+- author: String
+- ISBN: String
+- isAvailable: boolean
+---------------
++ checkOut(): void
++ returnBook(): void
+
+
+Class: Library
+---------------
+- books: ArrayList<Book>
+- libraryName: String
+---------------
++ addBook(book: Book): void
++ findBookByISBN(ISBN: String): Book
++ listAvailableBooks(): void
+
+
+Class: LibraryFileManager
+---------------
+(No properties)
+---------------
++ saveLibraryData(library: Library): void
++ loadLibraryData(): Library
+
+
+Class: UserInterface
+---------------
+- library: Library
+---------------
++ start(): void
++ displayMenu(): void
++ handleUserInput(): void
+
+
+Class: LibraryMember
+---------------
+- name: String
+- libraryCardNumber: String
+- checkedOutBooks: ArrayList<Book>
+---------------
++ checkOutBook(book: Book): void
++ returnBook(book: Book): void
+
+Notes:
+- "+" before a method indicates that the method is public.
+- "-" before a property indicates that the property is private.
+
