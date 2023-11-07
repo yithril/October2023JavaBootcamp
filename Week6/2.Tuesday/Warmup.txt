@@ -1,0 +1,52 @@
+This warmup is a bit different than normal. I want you to experiment with code and learn how Java works by 
+coding and just seeing what happens!
+
+Instructions:
+
+STEP 1
+
+Create Classes:
+
+a. Create a parent class, Animal, with a method makeSound(). Print a generic animal sound message.
+
+makeSound()'s signature should be public void makeSound() { System.out.println("") } 
+you can decide what it should print to the screen yourself.
+
+b. Create two subclasses:
+
+Dog inherits from Animal.
+Cat inherits from Animal.
+
+In the Dog subclass:
+
+Create a method makeSound() with the exact same method signature as the one in the parent class but with a different implementation. 
+That means the Dog class should ALSO have a method public void makeSound(); 
+Make the Dog class print "Bark! Bark!" when makeSound is called.
+Leave the Cat subclass as is.
+
+Run and Record:
+
+Instantiate a Dog and a cat in main, and make them both run their makeSound() methods.
+Run your code.
+Observe the output.
+Record what happens and any observations.
+
+Why do you think you got this outcome? Can you explain what's happening.
+
+STEP 2
+
+Now go to the Dog class, and above the makeSound method add this annotation: @Override
+
+Your code should look like:
+
+@Override
+public void makeSound(){
+System.out.println("Bark! Bark!")
+}
+
+What do you think Override means? Does this annotation change the output of the code you run in main?
+
+Experiment: Now that the @Override is on top of your method, try purposefully mispelling the name of the method makeSound in the Dog class.
+For example, instead of public void makeSound, try typing public void makeSound2(). What happens?
+
+BONUS: Given the behavior you have observed, are there any uses to this technique?
