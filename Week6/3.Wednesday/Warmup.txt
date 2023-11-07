@@ -1,0 +1,28 @@
+Instructions:
+
+    Create Classes:
+
+    a. Create a parent class, Shape, with a method area(). The area() method should return 0 as a default value.
+
+    b. Create two subclasses:
+        Circle extending Shape.
+        Rectangle extending Shape.
+
+    Override area():
+
+    In both the Circle and Rectangle subclasses, override the area() method to calculate and return the actual area of the shape. For example, calculate the area of a circle using the formula π * r^2 and the area of a rectangle using length * width.
+
+    Create Objects:
+
+    Create instances of Circle and Rectangle classes and store them in an array or a list of type Shape. For example:
+
+Shape[] shapes = new Shape[3];
+shapes[0] = new Circle(radius);  // Initialize with appropriate values
+shapes[1] = new Rectangle(length, width);  // Initialize with appropriate values
+shapes[2] = new Circle(anotherRadius);  // Initialize with appropriate values
+
+Calculate and Display Areas:
+
+    Iterate through the shapes array/list.
+    For each shape, call the area() method and display the result.
+    Observe that the correct area() method is called based on the actual object type (polymorphism).
