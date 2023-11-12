@@ -52,6 +52,7 @@ public class House extends Asset {
 
     @Override
     public double getValue(){
+        System.out.println("Using the house class's get value");
         var lotPrice = this.lotSize * .25;
         switch(condition){
             case 1:
@@ -65,5 +66,10 @@ public class House extends Asset {
             default:
                 throw new IllegalArgumentException("Invalid quality value.");
         }
+    }
+
+    @Override
+    public double getTaxableValue(){
+        return this.getValue() * .75;
     }
 }

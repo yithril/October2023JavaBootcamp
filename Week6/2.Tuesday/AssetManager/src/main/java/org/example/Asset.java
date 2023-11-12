@@ -1,6 +1,6 @@
 package org.example;
 
-public class Asset {
+public abstract class Asset {
     private String description;
     private String dateAcquired;
     private double originalCost;
@@ -36,6 +36,9 @@ public class Asset {
     }
 
     public double getValue(){
+        System.out.println("Original asset");
         return this.originalCost;
     }
+
+    public abstract double getTaxableValue();
 }

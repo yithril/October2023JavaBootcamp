@@ -1,0 +1,19 @@
+Objective: Learn how to use generics by creating a generic container class that can hold and retrieve an object of any type.
+
+    Generic Class Creation:
+        Create a generic class named Container<T>. Here, T is a placeholder for the type that the Container will hold.
+        Inside the class, have a private variable of type T to store the object.
+        Provide a constructor to initialize the container with an object of type T.
+        Include get() and set(T item) methods to retrieve and update the object in the container.
+
+    Method Implementation:
+        The set(T item) method should set the internal variable to item.
+        The get() method should return the stored item.
+
+    Testing with Different Types:
+        In the main method, create instances of Container for different types, such as Integer, String, and maybe a custom class like Book.
+        Use the set and get methods to store and retrieve objects from these containers.
+        Print out the results to ensure the container is working with different types.
+
+    Optional Challenge - Adding a Generic Method:
+        Add a generic static method in the Container class, like static <U> void printContainer(Container<U> container), which prints the contents of any Container.

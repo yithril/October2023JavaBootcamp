@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         ArrayList<Asset> assetCollection = new ArrayList<>();
+        ArrayList<House> houseCollection = new ArrayList<>();
 
         House mansion = new House("My summer palace", "10/01/2023",
                 300000, "123 Baller St.", 1, 5000, 6000);
@@ -14,6 +15,15 @@ public class Main {
 
         assetCollection.add(mansion);
         assetCollection.add(bugatti);
+
+        houseCollection.add(mansion);
+
+        for(House house : houseCollection){
+            var asset = ((Asset) house);
+
+            System.out.println(asset.getValue());
+        }
+
 
         for (Asset asset : assetCollection) {
             System.out.println("Description: " + asset.getDescription());
@@ -33,5 +43,6 @@ public class Main {
 
             System.out.println();
         }
+
     }
 }

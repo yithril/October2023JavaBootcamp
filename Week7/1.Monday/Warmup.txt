@@ -1,0 +1,13 @@
+Objective: REVIEW Create a class to model a room, using both regular and derived getters to access its properties and calculated values.
+
+    Class Creation - Room:
+        Define a class named Room with properties: length, width, and temperatureInCelsius.
+        Include standard getters and setters for these properties.
+
+    Derived Getters:
+        Area Calculation: Add a derived getter getArea() that calculates and returns the area of the room (length * width).
+        Temperature Conversion: Add a derived getter getTemperatureInFahrenheit() that converts the temperature from Celsius to Fahrenheit and returns it. The formula for conversion is (temperatureInCelsius * 9/5) + 32.
+
+    Testing the Model:
+        In the main method, create an instance of Room with some initial values.
+        Use the getters to display the room’s dimensions, area, and temperature in both Celsius and Fahrenheit.

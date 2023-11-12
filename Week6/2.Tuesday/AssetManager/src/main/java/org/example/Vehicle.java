@@ -69,4 +69,9 @@ public class Vehicle extends Asset {
 
         return finalValue;
     }
+
+    @Override
+    public double getTaxableValue() {
+        return 0;
+    }
 }

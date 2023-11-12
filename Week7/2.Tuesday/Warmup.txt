@@ -1,0 +1,15 @@
+Objective: Learn the basics of Java interfaces by creating and implementing a Device interface.
+
+    Define an Interface:
+        Create an interface named Device with two methods: turnOn() and turnOff().
+        These methods should not take any parameters and should return nothing (void).
+
+    Implement the Interface:
+        Create two classes, Smartphone and Laptop, that implement the Device interface.
+        In each class, provide an implementation for the turnOn() and turnOff() methods.
+        For instance, in the Smartphone class, turnOn() could print "Smartphone is turning on" and turnOff() 
+	could print "Smartphone is shutting down".
+
+    Create a Main Method to Test:
+        Write a simple main method where you instantiate a Smartphone and a Laptop.
+        Call their turnOn and turnOff methods to test if they behave as expected.
