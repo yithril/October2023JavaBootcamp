@@ -1,0 +1,20 @@
+Activity: "Plan a Vacation"
+Objective
+
+To plan a vacation, highlighting the differences between declarative and imperative approaches.
+
+The students in the group will be the client, and they will write down how they would talk to an imaginary travel agent.
+
+Task
+
+    The 'Clients' will plan a vacation but will approach it differently for each round.
+
+Round 1: Imperative Style
+
+How would you talk about the vacation you want to take with your travel agent, in the imperative style?
+
+Round 2: Declarative Style
+
+How would you talk about the vacation you want to take, but in the declarative style?
+
+Write it out and we will discuss as a class to illustrate the difference between the two styles.
