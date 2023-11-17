@@ -23,3 +23,17 @@ Bimal
 Sara
 Supriya
 Freddy
+
+
+Preparation for Capstone:
+
+1. Carefully read project requirements, come up with pseudo code ideas.
+2. Create UML diagrams of all classes, marking interfaces, abstract classes, inheritance, and methods etc.
+3. Create pseudo code for your methods that aren't just getters and setters.
+4. Use Trello or whatever project management software to organize the tasks and break them down into something each individual can do.
+
+GIT HUB REPO OWNER
+1. Create a Github Repo for your group.
+2. Make your teammates collaborators
+3. Create a blank intellij project and push it to the repo.
+4. Add branch protection to the main branch.
