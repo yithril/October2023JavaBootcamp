@@ -1,7 +1,9 @@
 package org.example;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -40,16 +42,51 @@ public class Main {
 
         //You don't always have to print to the console, but it could be helpful for testing!
         // 1. Print the full names of all people.
+        //database.stream().map(x -> x.getFirstName() + ", " + x.getLastName()).toList().forEach(System.out::println);
+
         // 2. Calculate the average yearly income of all people.
+        //var average = database.stream().map(x -> x.getYearlyIncome()).reduce(0d, (temp, num) -> temp += num) / database.size();
+        //System.out.println("Average yearly income: " + average);
+
+        //var yearlyAverage = database.stream().mapToDouble(Person::getYearlyIncome).average();
+
         // 3. List the professions of people living in Texas.
+        //database.stream().filter(x -> x.getState().equalsIgnoreCase("Texas")).map(Person::getProfession).toList().forEach(System.out::println);
+
         // 4. Find the person with the highest income.
+        //System.out.println(database.stream().max(Comparator.comparing(Person::getYearlyIncome)).get().getFirstName());
+
         // 5. Count the number of people living in California.
+        long countCaliforniaResidents = database.stream().filter(person -> person.getState().equalsIgnoreCase("California")).count();
+        //System.out.println(countCaliforniaResidents);
+
         // 6. Create a list of people who are not teachers.
+        database.stream().filter(person -> !person.getProfession().equalsIgnoreCase("Teacher")).toList();
+
         // 7. Find the total income of all doctors.
+        double totalIncome = database.stream().filter(person -> person.getProfession().equalsIgnoreCase("Doctor")).mapToDouble(Person::getYearlyIncome).sum();
+
         // 8. Print the names of people with an income higher than 100000.
+        database.stream().filter(person -> person.getYearlyIncome() > 100000).map(Person::getFullName).toList();
+
         // 9. Find the average income of engineers.
+        var total = database.stream().filter(person -> person.getProfession().equalsIgnoreCase("Engineer"))
+                .map(person -> person.getYearlyIncome())
+                .reduce(0d, (temp, num) -> temp += num);
+
+        var average = total / database.stream().filter(person -> person.getProfession().equalsIgnoreCase("Engineer")).toList().size();
+
+        database.stream().filter(person -> person.getProfession().equalsIgnoreCase("Engineer")).mapToDouble(Person::getYearlyIncome).average();
+
         // 10. List the first names of people whose last name starts with 'S'.
+        List<String> persons = database.stream().filter(x -> x.getLastName().startsWith("S")).map(x -> x.getFirstName()).toList();
+
         // 11. List the last names of all people who have a yearly income greater than $75,000 and live in Florida.
+        database.stream().filter(person -> person.getYearlyIncome() > 75000 && person.getState().equalsIgnoreCase("Florida"))
+                .map(Person::getLastName).toList();
+
         // 12. Find the average income of people whose profession is 'Teacher' or 'Doctor'.
+        database.stream().filter(x -> x.getProfession().equalsIgnoreCase("Teacher") || x.getProfession().equalsIgnoreCase("Doctor"))
+                .mapToDouble(Person::getYearlyIncome).average();
     }
 }

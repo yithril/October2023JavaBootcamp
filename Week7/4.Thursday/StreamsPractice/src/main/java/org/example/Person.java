@@ -64,4 +64,8 @@ public class Person {
     public void setYearlyIncome(double yearlyIncome) {
         this.yearlyIncome = yearlyIncome;
     }
+
+    public String getFullName(){
+        return this.firstName + " " + this.lastName;
+    }
 }
