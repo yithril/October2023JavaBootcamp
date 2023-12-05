@@ -1,0 +1,9 @@
+Join Question 1: Write a query to display the order ID, order date, and company name of each customer. Join the Orders table with the Customers table.
+
+Join Question 2: Create a query to list all products (product name) and their respective categories (category name). Use a join between the Products table and the Categories table.
+
+Subquery Question 1: Find the names of the customers who have placed orders with a total value greater than the average total value of all orders. Use a subquery in the Orders table.
+
+Subquery Question 2: Write a query to list the names of the products that have never been ordered. Use a subquery with the Products table and the Order_Details table.
+
+Challenge Question: Display the product name, supplier name, and category name for all products that have a unit price higher than the average unit price of their respective category. This query will require joins between the Products, Suppliers, and Categories tables, and a subquery to calculate the average price per category.
