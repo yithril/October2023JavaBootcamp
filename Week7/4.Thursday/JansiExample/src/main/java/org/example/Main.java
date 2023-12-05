@@ -13,5 +13,11 @@ public class Main {
         System.out.println(ansi().fg(Ansi.Color.CYAN).a("**************************************").reset());
 
         AnsiConsole.systemUninstall();
+
+        String name = "JOnathan";
+
+        System.out.printf("Hi there %s", name);
+
+        Dog dog = new Dog("Bisky");
     }
 }
