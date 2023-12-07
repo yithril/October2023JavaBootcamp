@@ -1,0 +1,26 @@
+Scenario: Online Bookstore
+Description:
+
+Imagine you are developing a system for an online bookstore. The bookstore has a variety of books, each with unique attributes. 
+Customers can place orders for these books. Each order can contain multiple books, but each book can belong to only one order at a time.
+
+Step 1: Write Java classes to model this situation.
+
+You will need a Book class, an Order class, and a Customer class. Please implement these classes in a Java project.
+Discuss with your group what properties the classes should have (name, date, order#, etc.)
+
+-Each class needs to have at least 4 properties.
+-You will need to consider the relationships between them. (Think back to the IS-A and HAS-A relationships we learned in weeks previous)
+
+Step 2. Design SQL tables
+
+Next, create SQL tables for each of the Java classes. You should write all the sql queries in one file.
+Think on how to best represent the Java data type in SQL. 
+
+Tips:
+
+-Java classes are written in singular form (typically)
+-The name of the table needs to be the plural form of the class. For example, if the Java class is Car then the table should be named Cars.
+-The column names should be exactly the same as the properties in the Java class (case sensitive)
+-You will need to consider how to represent things like strings and floating point numbers in SQL.
+-Create foreign keys as is necessary.
