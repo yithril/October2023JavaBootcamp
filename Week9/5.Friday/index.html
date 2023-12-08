@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Search with OMDB API</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #moviePoster {
+            width: 300px;
+            height: auto;
+            margin-top: 20px;
+        }
+        .centered-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 centered-content">
+                <h1>Movie Search</h1>
+                <div class="input-group mb-3">
+                    <input type="text" id="movieInput" class="form-control" placeholder="Enter movie name" aria-label="Movie name">
+                    <button class="btn btn-primary" type="button" onclick="searchMovie()">Search</button>
+                </div>
+                <div id="movieDisplay">
+                    <img id="moviePoster" src="" alt="Movie Poster" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function searchMovie() {
+            var movieName = document.getElementById('movieInput').value;
+            var xhr = new XMLHttpRequest();
+            //API KEY WILL GO HERE
+            xhr.open('GET', 'https://www.omdbapi.com/?t=' + encodeURIComponent(movieName) + '&apikey=16efb775', true);
+            xhr.onload = function() {
+                if (this.status === 200) {
+                    var response = JSON.parse(this.responseText);
+                    console.log(response);
+                    if (response.Response === "True") {
+                        document.getElementById('moviePoster').src = response.Poster;
+                    } else {
+                        document.getElementById('moviePoster').src = '';
+                        alert('Movie not found!');
+                    }
+                }
+            };
+            xhr.send();
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
