@@ -45,9 +45,9 @@ public class Main {
         //iterate - means loop through something or to go through something one by one
         //e.g. iterate through the fruitArray
         //["Banana", "Oranges", null, null, null ]
-/*        for(int i = 0; i < fruitArray.length; i++){
+        for(int i = 0; i < fruitArray.length; i++){
             System.out.println(fruitArray[i]);
-        }*/
+        }
         //alternate way to iterate through an array
         for(String fruit : fruitArray){
             System.out.println("I love " + fruit);

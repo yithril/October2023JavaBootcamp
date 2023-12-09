@@ -23,7 +23,7 @@ public class Main {
         boolean areEqual = intArray.equals(intArray2);
 
         System.out.println(areEqual);
-        /*
+
         while(isShopping == true){
             System.out.println("Please select a fruit.");
             int userInput = scanner.nextInt();
@@ -35,7 +35,6 @@ public class Main {
                     break;
                 case 2:
                     System.out.println("Dragonfruit is very spiky.");
-                    isShopping = false;
                     break;
                 case 3:
                     System.out.println("Durian is the worst smelling thing ever");
@@ -47,6 +46,6 @@ public class Main {
             }
         }
 
-         */
+
     }
 }

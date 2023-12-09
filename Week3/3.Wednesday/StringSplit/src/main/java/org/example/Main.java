@@ -11,6 +11,8 @@ public class Main {
             System.out.println(data);
         }
 
+        System.out.println("Let's do split function with strings!");
+
         String sku = dataRow[0];
         String productName = dataRow[1];
         String department = dataRow[3];
@@ -21,6 +23,9 @@ public class Main {
         //int price2 = Integer.parseInt(dataRow[2]);
 
         InventoryItem inventoryItem = new InventoryItem(sku, productName, price, department);
+
+        System.out.println(inventoryItem);
+        System.out.println("We have a sale on inventory items today!!!!!!!!!!!!!!!!!!!");
 /*
         String row2 = "AV1051,JBL Bluetooth Speaker,89.95,Audio Video";
 
