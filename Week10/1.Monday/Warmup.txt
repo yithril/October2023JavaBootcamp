@@ -1,6 +1,7 @@
 GROUP DISCUSSION
 
 I'd like you to do some research on the design pattern called "Model-View-Controller" or MVC for short.
+You can search for it on Google or use ChatGPT or any resource that has the info, it won't be hard to find.
 
 Please answer the following questions:
 
