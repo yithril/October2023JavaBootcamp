@@ -7,11 +7,11 @@ public class Main {
         String url = "jdbc:mysql://localhost:3306/northwind";
 
         // To use the safe query manager
-        SafeQueryManager safeQueryManager = new SafeQueryManager();
-        safeQueryManager.queryDatabase(username, password, url);
+        //SafeQueryManager safeQueryManager = new SafeQueryManager();
+        //safeQueryManager.queryDatabase(username, password, url);
 
         // To use the unsafe query manager, uncomment the following lines
-        //UnsafeQueryManager unsafeQueryManager = new UnsafeQueryManager();
-        //unsafeQueryManager.queryDatabase(username, password, url);
+        UnsafeQueryManager unsafeQueryManager = new UnsafeQueryManager();
+        unsafeQueryManager.queryDatabase(username, password, url);
     }
 }

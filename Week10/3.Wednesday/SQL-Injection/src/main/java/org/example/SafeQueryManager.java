@@ -9,7 +9,7 @@ public class SafeQueryManager {
             System.out.println("Enter EmployeeID:");
             int employeeId = scanner.nextInt();
 
-            String query = "SELECT FirstName, LastName, SSN FROM Employees WHERE EmployeeID = ?";
+            String query = "SELECT FirstName, LastName, Title SSN FROM Employees WHERE EmployeeID = ?";
             try (Connection conn = DriverManager.getConnection(url, username, password);
                  PreparedStatement ps = conn.prepareStatement(query)) {
 
@@ -17,7 +17,7 @@ public class SafeQueryManager {
 
                 try (ResultSet rs = ps.executeQuery()) {
                     if (rs.next()) {
-                        System.out.println("Employee: " + rs.getString("FirstName") + " " + rs.getString("LastName"));
+                        System.out.println("Employee: " + rs.getString("FirstName") + " " + rs.getString("LastName") + " " + rs.getString("Title"));
                     } else {
                         System.out.println("No employee found with that ID.");
                     }
