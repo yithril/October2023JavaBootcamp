@@ -1,0 +1,11 @@
+ALTER TABLE Employees ADD SSN VARCHAR(11);
+
+SET SQL_SAFE_UPDATES = 0;
+
+UPDATE Employees SET SSN = CONCAT(
+    LPAD(FLOOR(RAND() * 1000), 3, '0'), '-',
+    LPAD(FLOOR(RAND() * 100), 2, '0'), '-',
+    LPAD(FLOOR(RAND() * 10000), 4, '0')
+) WHERE EmployeeID IS NOT NULL;
+
+SET SQL_SAFE_UPDATES = 1;
