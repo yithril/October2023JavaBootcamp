@@ -9,7 +9,7 @@ public class SafeQueryManager {
             System.out.println("Enter EmployeeID:");
             int employeeId = scanner.nextInt();
 
-            String query = "SELECT FirstName, LastName, Title SSN FROM Employees WHERE EmployeeID = ?";
+            String query = "SELECT FirstName, LastName, Title FROM Employees WHERE EmployeeID = ?";
             try (Connection conn = DriverManager.getConnection(url, username, password);
                  PreparedStatement ps = conn.prepareStatement(query)) {
 
