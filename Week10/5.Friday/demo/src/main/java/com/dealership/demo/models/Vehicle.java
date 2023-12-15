@@ -1,7 +1,7 @@
 package com.dealership.demo.models;
 
 public class Vehicle {
-    private int vin;
+    private String vin;
     private int year;
     private String make;
     private String model;
@@ -10,7 +10,7 @@ public class Vehicle {
     private int odometer;
     private double price;
 
-    public Vehicle(int vin, int year, String make, String model, String color, String vehicleType, int odometer, double price) {
+    public Vehicle(String vin, int year, String make, String model, String color, String vehicleType, int odometer, double price) {
         this.vin = vin;
         this.year = year;
         this.make = make;
@@ -21,11 +21,11 @@ public class Vehicle {
         this.price = price;
     }
 
-    public int getVin() {
+    public String getVin() {
         return vin;
     }
 
-    public void setVin(int vin) {
+    public void setVin(String vin) {
         this.vin = vin;
     }
 

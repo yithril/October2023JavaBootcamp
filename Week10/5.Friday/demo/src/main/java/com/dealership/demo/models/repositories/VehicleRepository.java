@@ -35,9 +35,10 @@ public class VehicleRepository {
             ResultSet rs = ps.executeQuery();
 
             while(rs.next()){
-                vehicles.add(new Vehicle(rs.getInt("VIN"), rs.getInt("Year"),
-                        rs.getString("Make"), rs.getString("Model"), rs.getString("Color"),
-                        rs.getString("VehicleType"), rs.getInt("Odometer"), rs.getDouble("Price")));
+                var vehicle = new Vehicle(rs.getString("vin"), rs.getInt("year"),
+                        rs.getString("make"), rs.getString("model"), rs.getString("color"),
+                        rs.getString("type"), rs.getInt("odomoter"), rs.getDouble("price"));
+                vehicles.add(vehicle);
             }
         }
         catch(SQLException ex){
