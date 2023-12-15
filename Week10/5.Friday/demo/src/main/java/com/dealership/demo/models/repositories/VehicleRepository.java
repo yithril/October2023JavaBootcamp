@@ -5,6 +5,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -21,7 +26,25 @@ public class VehicleRepository {
     }
 
     public List<Vehicle> getAllVehicles(){
-        return null;
+        String query = "SELECT * FROM vehicles";
+        List<Vehicle> vehicles = new ArrayList<>();
+
+        try(Connection conn = dataSource.getConnection();
+            PreparedStatement ps = conn.prepareStatement(query)){
+
+            ResultSet rs = ps.executeQuery();
+
+            while(rs.next()){
+                vehicles.add(new Vehicle(rs.getInt("VIN"), rs.getInt("Year"),
+                        rs.getString("Make"), rs.getString("Model"), rs.getString("Color"),
+                        rs.getString("VehicleType"), rs.getInt("Odometer"), rs.getDouble("Price")));
+            }
+        }
+        catch(SQLException ex){
+            ex.printStackTrace();
+        }
+
+        return vehicles;
     }
 
     public List<Vehicle> getVehiclesByPrice(double min, double max){
@@ -34,5 +57,25 @@ public class VehicleRepository {
 
     public List<Vehicle> getVehiclesByYear(int min, int max){
         return null;
+    }
+
+    public List<Vehicle> getVehiclesByColor(String color){
+        return null;
+    }
+
+    public List<Vehicle> getVehiclesByMileage(int min, int max){
+        return null;
+    }
+
+    public List<Vehicle> getVehiclesByType(String vehicleType){
+        return null;
+    }
+
+    public void addVehicle(Vehicle vehicle){
+
+    }
+
+    public void removeVehicle(String vin){
+
     }
 }
