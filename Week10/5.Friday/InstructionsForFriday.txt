@@ -1,0 +1,19 @@
+Your mission, should you choose to accept it:
+
+We're doing the end of week project in two parts. We're going to do the models and the repositories first.
+Later we will do the controller and actually create an honest to goodness API.
+
+Today, you need to do the following things:
+
+1. Finish the Vehicle repository. I have already stubbed all the methods that you need.
+   You can look in the classroom github repo to see what's already done.
+
+2. Bring the dealership from your old project into the new project. You will need to adjust it.
+   For example, we don't need all those extra methods, we just need the basic getters and setters for
+   the dealership.
+
+3. You will need to create a dealership repository. This repository will be able to do all CRUD functions
+   for a dealership. 
+
+4. This is NOT a console app, so there is nothing to type in, no menus, none of that stuff. To test to see
+   if you are correct, you need to make a unit test. There is an example in the class github repo.
