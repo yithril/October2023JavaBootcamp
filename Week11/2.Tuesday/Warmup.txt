@@ -1,0 +1,22 @@
+1. Create a New Spring Boot Project:
+
+    Use Spring Initializr.
+    Include dependencies for Spring Web, Spring Data JPA, and MySQL database driver.
+
+2. Pretend we're making an api for a bookstore. Define and Create the Following Entities:
+	
+    Author: id, name (not nullable)
+    Book: id, title (not nullable, no longer than 40 characters), publish_date (not nullable), likes (int), price, genre 
+        *For genre, create an enum called Genre (FICTION, SCIENCE_FICTION, etc...) and look up how to 
+         correctly annotate an enum so it works with Spring Data JPA
+    Publisher: id, name (not nullable), country (not nullable)
+
+3. Be sure to set up the application.properties can correctly connect to your database.
+
+4. Run your program and watch your tables get made!
+
+BONUS: Under normal circumstances we could connect these tables with foreign keys. We'll learn how to do that today, but first
+       think about the relationship between Books, Authors, and Publishers. 
+       
+       Read the following tutorial to learn about the possible relationships: https://www.tutorialsteacher.com/sqlserver/tables-relations
+   
