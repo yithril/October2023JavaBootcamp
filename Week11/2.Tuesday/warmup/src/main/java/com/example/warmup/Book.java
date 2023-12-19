@@ -8,6 +8,9 @@ import lombok.NoArgsConstructor;
 import java.math.BigDecimal;
 import java.sql.Date;
 
+//This is the universe where we use Lombok
+//Notice how we don't have to write getters and setters
+//And we don't have to write constructors. We just use annotations
 @Entity
 @Table(name = "books")
 @Data
