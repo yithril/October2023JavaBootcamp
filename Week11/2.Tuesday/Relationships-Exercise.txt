@@ -1,0 +1,39 @@
+Activity: Understanding Entity Relationships
+
+Objective: Determine the appropriate JPA relationship type (One-to-One, One-to-Many, Many-to-One, or Many-to-Many) for each given pair of models. For One-to-Many and Many-to-One relationships, also identify from which perspective the relationship is defined.
+Example:
+
+    Models: User and Profile
+        Description: Each User has one Profile. A Profile is associated with only one User.
+        Answer: One-to-One relationship.
+            User @OneToOne -> Profile
+            Profile @OneToOne -> User
+
+Exercises:
+
+    Models: Author and Book
+        Description: An Author can write several Books, but each Book is written by one specific Author.
+
+    Models: Teacher and Class
+        Description: A Teacher can teach multiple Classes, but each Class is taught by only one Teacher.
+
+    Models: Product and Category
+        Description: A Product belongs to one Category, but a Category can include many Products.
+
+    Models: Doctor and Patient
+        Description: A Doctor can see many Patients, but Patients can see different Doctors at different times.
+
+    Models: Country and CapitalCity
+        Description: Each Country has one CapitalCity, and each CapitalCity is the capital of only one Country.
+
+    Models: Player and Team
+        Description: A Player can be part of only one Team at a time, but a Team consists of many Players.
+
+    Models: Movie and Actor
+        Description: A Movie can have many Actors, and an Actor can act in many Movies.
+
+    Models: Store and Employee
+        Description: An Employee works at one Store, but a Store can have many Employees.
+
+    Models: Course and Student
+        Description: A Student can enroll in multiple Courses, and a Course can have many Students.
