@@ -1,0 +1,168 @@
+openapi: 3.0.1
+info:
+  title: OpenAPI definition
+  version: v0
+servers:
+- description: Generated server url
+  url: http://localhost:8080
+paths:
+  /api/books/{id}:
+    delete:
+      operationId: deleteBook
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          description: OK
+      tags:
+      - book-controller
+      x-accepts: application/json
+      x-tags:
+      - tag: book-controller
+    get:
+      operationId: getBookById
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/Book'
+          description: OK
+      tags:
+      - book-controller
+      x-accepts: '*/*'
+      x-tags:
+      - tag: book-controller
+    put:
+      operationId: updateBook
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Book'
+        required: true
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/Book'
+          description: OK
+      tags:
+      - book-controller
+      x-content-type: application/json
+      x-accepts: '*/*'
+      x-tags:
+      - tag: book-controller
+  /api/books:
+    get:
+      operationId: getAllBooks
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                items:
+                  $ref: '#/components/schemas/Book'
+                type: array
+          description: OK
+      tags:
+      - book-controller
+      x-accepts: '*/*'
+      x-tags:
+      - tag: book-controller
+    post:
+      operationId: createBook
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Book'
+        required: true
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/Book'
+          description: OK
+      tags:
+      - book-controller
+      x-content-type: application/json
+      x-accepts: '*/*'
+      x-tags:
+      - tag: book-controller
+components:
+  schemas:
+    Author:
+      example:
+        name: name
+        id: 5
+      properties:
+        id:
+          format: int64
+          type: integer
+        name:
+          type: string
+      type: object
+    Book:
+      example:
+        price: 1.4658129805029452
+        author:
+          name: name
+          id: 5
+        genre: FICTION
+        id: 0
+        publishedDate: 2000-01-23T04:56:07.000+00:00
+        title: title
+        likes: 6
+      properties:
+        id:
+          format: int64
+          type: integer
+        title:
+          type: string
+        publishedDate:
+          format: date-time
+          type: string
+        genre:
+          enum:
+          - FICTION
+          - NON_FICTION
+          type: string
+        likes:
+          format: int32
+          type: integer
+        price:
+          type: number
+        author:
+          $ref: '#/components/schemas/Author'
+      required:
+      - genre
+      - title
+      type: object

@@ -2,12 +2,12 @@ package com.example.warmup.controllers;
 
 import com.example.warmup.Book;
 import com.example.warmup.repositories.BookRepository;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -29,8 +29,15 @@ public class BookController {
         return new ResponseEntity<>(books, HttpStatus.OK);
     }
 
+    @GetMapping("/search")
+    public ResponseEntity<List<Book>> searchBooks(@RequestParam String title){
+        List<Book> books = this.bookRepository.findByTitleContainingIgnoreCase(title);
+
+        return new ResponseEntity<>(books, HttpStatus.OK);
+    }
+
     @PostMapping
-    public ResponseEntity<Book> createBook(@Valid @RequestBody Book book){
+    public ResponseEntity<Book> createBook(@RequestBody @Valid Book book){
         var book2 = this.bookRepository.save(book);
 
         return new ResponseEntity<>(book2, HttpStatus.CREATED);
